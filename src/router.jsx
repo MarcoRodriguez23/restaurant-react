@@ -3,7 +3,7 @@ import Layout from './layouts/Layout';
 import AuthLayout from './layouts/AuthLayout';
 import Inicio from './views/Inicio';
 import Login from './views/Login';
-import Registro from './views/registro';
+import Registro from './views/Registro';
 
 const router = createBrowserRouter([
   {
