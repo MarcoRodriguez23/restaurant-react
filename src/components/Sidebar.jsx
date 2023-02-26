@@ -1,5 +1,24 @@
+import Categoria from './Categoria'
+import { categorias } from "../data/categorias"
+
 export default function Sidebar() {
   return (
-    <div className="md:w-72">Sidebar</div>
+    <aside className="md:w-72">
+      <div className="p-4">
+        <img 
+          src="img/logo.svg" 
+          alt="logotipo" 
+          className="w-40"  
+        />
+      </div>
+
+      <div className="mt-10">
+        {categorias.map( categoria => (
+          <Categoria 
+            categoria={categoria}
+          />
+        ))}
+      </div>
+    </aside>
   )
 }
